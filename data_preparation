@@ -1,5 +1,5 @@
-#Text to rows
-
+# Text to rows
+# https://stackoverflow.com/questions/12680754/split-explode-pandas-dataframe-string-entry-to-separate-rows/39946744#
 '''
 Convert text column/list column to multiple rows
 '''
