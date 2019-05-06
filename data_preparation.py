@@ -34,3 +34,10 @@ def explode(df, lst_cols, fill_value='', preserve_index=False):
     if not preserve_index:        
         res = res.reset_index(drop=True)
     return res
+
+# Group by one column and multiple aggregations
+
+df.groupby('group').agg({'a':['sum', 'max'], 
+                         'b':'mean', 
+                         'c':'sum', 
+                         'd': lambda x: x.max() - x.min()})
